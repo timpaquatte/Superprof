@@ -21,3 +21,9 @@ Build the app:
 ```
 cordova build
 ```
+
+Open the emulator and run the app:
+```
+cordova emulate ios
+cordova run ios
+```
