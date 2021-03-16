@@ -1,5 +1,7 @@
 # Installation of the development environment for Cordova on MacOSX
 
+Source: https://cordova.apache.org/docs/en/10.x/guide/platforms/ios/index.html
+
 NB: During the installation a password will be asked, you have to enter the password of your session.
 
 NB2: Some of the following commands may give some instructions that I did not write here like pressing ENTER or clicking "Accept", you have to do it.
