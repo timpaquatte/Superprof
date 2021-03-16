@@ -4,7 +4,9 @@ Open a Terminal by typing "Terminal" in the Launchpad.
 
 When you are in the Terminal, you are in fact located in a directory, which is initially your home directory. You can change the current directory, create new ones, and do pretty much anything you want in this terminal.
 
-Some useful commands:
+If you have any problem or question about some action in the terminal, don't hesitate to ask Google! For example if you can't copy/paste as usual in the Terminal, search "macos terminal copy paste" and maybe you'll find some tricks like using Ctrl+Shift+C or anything. The terminal is really powerful so the more you learn about it the more powerful you'll be yourself !
+
+## Some useful commands:
 
 * Change the current directory
 ```
