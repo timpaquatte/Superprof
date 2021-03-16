@@ -1,5 +1,7 @@
 # Create an application with Cordova
 
+Source: https://cordova.apache.org/docs/en/10.x/guide/cli/index.html
+
 Open a terminal and go to the directory where you usually store your code (with the command `cd`).
 
 Create the folder:
