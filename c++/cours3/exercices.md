@@ -43,3 +43,20 @@ Count of 4 in v: 3
 Count of 5 in v: 3
 Count of 3 in v: 3
 ```
+
+## Exo 3 - Calcul de Pi avec la méthode de Monte Carlo
+
+* Ecrire un programme qui calcule Pi avec la méthode de Monte Carlo: on considère un carré 2x2 dans lequel est inscrit un cercle. Le but est de calculer Pi en simulant des lancers de fléchettes sur le carré.
+
+![](./estimating-pi-monte-carlo-method.png)
+
+On a donc:
+```
+Aire(cercle) = Pi
+Aire(carré) = 2x2
+ratio = Aire(cercle) / Aire(carré) = Pi / 4;
+```
+
+Ainsi si on calcule le ratio `Aire(cercle)/Aire(carré)` et qu'on le multiplie par 4 on obtient une approximation de Pi. Pour cela, lancer 100 000 des fléchettes (générer un point aléatoire de coordonnées entre -1 et 1) et regarder si elles tombent dans le cercle. Il suffit ensuite de diviser le nombre de lancers par le nombre de lancers qui atterrissent dans le cercle pour obtenir le ratio. Vérifier que l'on tombe bien sur Pi.
+
+* Effectuer la même opération avec 10 threads parallèles
