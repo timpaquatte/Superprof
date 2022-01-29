@@ -6,7 +6,7 @@
 
 Exemple:
 ```bash
-./exo2 5
+./exo1 5
 Thread 1
 Thread 3
 Thread 4
@@ -28,14 +28,14 @@ Finalement le programme affiche le `vector` obtenu lorsque tous les threads ont 
 
 Exemple:
 ```bash
-./exo3 4
+./exo2 4
 [1, 2, 2, 1, 1, 3, 3, 4, 2, 5, 3, 4, 5, 5, 4]
 ```
 
 * Après cela, relancer `n` threads qui comptent le nombre d'apparitions de leur nombre assigné (par exemple leur ordre) et l'affiche.
 
 ```bash
-./exo3 4
+./exo2 4
 v = [1, 2, 2, 1, 1, 3, 3, 4, 2, 5, 3, 4, 5, 5, 4]
 Count of 1 in v: 3
 Count of 2 in v: 3
