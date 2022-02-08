@@ -21,15 +21,17 @@ int fibonacci(int n)
 
 void task_1(int n)
 {
+    int f = fibonacci(n-1);
     m.lock();
-    var = var + fibonacci(n-1);
+    var = var + f;
     m.unlock();
 }
 
 void task_2(int n)
 {
+    int f = fibonacci(n-2);
     m.lock();
-    var = var + fibonacci(n-2);
+    var = var + f;
     m.unlock();
 }
 
