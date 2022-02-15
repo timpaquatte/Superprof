@@ -31,8 +31,9 @@ void fibonacci(int n, int* returnValue,int nbThreads)
         if(nbThreads > 1)
         {
             int a, b;
-            std::thread t1(fibonacci, n-1, &a,nbThreads-2);
-            std::thread t2(fibonacci, n-2, &b,nbThreads-2);
+            std::cout << "2 threads sont lancés" << std::endl;
+            std::thread t1(fibonacci, n-1, &a,nbThreads/2);
+            std::thread t2(fibonacci, n-2, &b,nbThreads/2);
          
             t1.join();
             t2.join();
@@ -58,7 +59,7 @@ void fibonacci(int n, int* returnValue,int nbThreads)
 int main(int argc, char *argv[])
 {
     int i = 0;
-    int cpt = 8;
+    int cpt = 4;
     fibonacci(atoi(argv[1]), &i, cpt);
 
     std::cout << i << std::endl;
