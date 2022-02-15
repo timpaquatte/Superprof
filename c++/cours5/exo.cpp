@@ -9,7 +9,7 @@ mutex m;
 map<int, int> mapValues;
 
 
-void fibonacci(int n, int* returnValue,int* nbThreads)
+void fibonacci(int n, int* returnValue,int nbThreads)
 {
     if (n <= 0) {
         *returnValue = 0;
@@ -28,12 +28,12 @@ void fibonacci(int n, int* returnValue,int* nbThreads)
     }
     else 
     {   
-        if(*nbThreads > 1)
+        if(nbThreads > 1)
         {
             int a, b;
-            std::thread t1(fibonacci, n-1, &a,nbThreads);
-            std::thread t2(fibonacci, n-2, &b,nbThreads);
-            *nbThreads = *nbThreads - 2;
+            std::thread t1(fibonacci, n-1, &a,nbThreads-2);
+            std::thread t2(fibonacci, n-2, &b,nbThreads-2);
+         
             t1.join();
             t2.join();
             *returnValue = a + b;
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 {
     int i = 0;
     int cpt = 8;
-    fibonacci(atoi(argv[1]), &i, &cpt);
+    fibonacci(atoi(argv[1]), &i, cpt);
 
     std::cout << i << std::endl;
     return 0;
