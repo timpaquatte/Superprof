@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     m[1] = 4;
     m[2] = 6;
     m[4] = 6;
+    m[6] = 6;
 
    if (m.find(7)==m.end())
    {

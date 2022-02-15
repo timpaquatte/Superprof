@@ -7,18 +7,23 @@ int rec(int n)
 {
     if(n == 1)
     {  
-        std::cout<<n<<std::endl;
+        std::cout<< "Fini, return 1" <<std::endl;
 
         return 1;
     }
 
     else if(n > 1)
     {
-        std::cout<<n<<std::endl;
+        int i = 0;
 
-        return rec(n-1);
+        std::cout<< "Entre dans rec(" << n-1 << ")" <<std::endl;
+        i = rec(n-1);
+        std::cout<< "Sort de rec(" << n-1 << ")" <<std::endl;
+
+        return i;
     }
 
+    return 0;
 }
 
 

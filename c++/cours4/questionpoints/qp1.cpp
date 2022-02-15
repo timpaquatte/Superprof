@@ -4,36 +4,33 @@ using namespace std;
 //////////////////////////////////////////////////////////////////////////////////////////://
 // Pourquoi le code n'affiche t-il pas 11111 ? 
 
-void rec(int n, int* return_value)
+int rec(int n)
 {
     if (n==0)
     {
-        *return_value = 0;
-        std::cout << *return_value << std::endl;
-        return;
+        std::cout << 0 << std::endl;
+        return 0;
     }
 
     if (n ==1)
     {
-        *return_value = 1;
-        std::cout << *return_value << std::endl;
-        return;
+        std::cout << 1 << std::endl;
+        return 1;
     }
 
     else
     {
         int a;
-        rec(n-1,&a);
+        a = rec(n-1);
         std::cout << a << std::endl;
-        return;
+        return a;
     }
 }
-
 
 int main(int argc, char *argv[])
 {
     int i = 0;
-    rec(atoi(argv[1]), &i);
+    i = rec(atoi(argv[1]));
     std::cout << i << std::endl;
     return 0;
 }
