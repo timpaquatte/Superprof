@@ -1,6 +1,6 @@
 CXX := g++
 LDFLAGS := -lpthread
-targets != exo1 exo2 exo3
+targets := exo1 exo2 exo3
 
 %: %.cpp
 	$(CXX) $? -o $@ ${LDFLAGS}

@@ -1,15 +1,13 @@
-files := exo1 exo2 exo3
+files := exercice2-A exercice2-B 
 
 all: ${files}
 
-exo1: exo1.cpp
-	g++ exo1.cpp -o exo1 -lpthread
+exercice2-A: exercice2-A.cpp
+	g++ exercice2-A.cpp -o exercice2-A -lpthread
 
-exo2: exo2.cpp
-	g++ exo2.cpp -o exo2 -lpthread
+exercice2-B: exercice2-B.cpp
+	g++ exercice2-B.cpp -o exercice2-B -lpthread
 
-exo3: exo3.cpp
-	g++ exo3.cpp -o exo3 -lpthread
 
 clean:
 	rm -f ${files}

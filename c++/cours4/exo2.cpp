@@ -21,11 +21,13 @@ void fibonacci(int n, int* returnValue)
         return;
     }
 
-    if(mapValues.find(n) != mapValues.end()) {
+    if(mapValues.find(n) != mapValues.end()) 
+    {
         *returnValue = mapValues[n];
         return;
     }
-    else {
+    else 
+    {
         int a, b;
         std::thread t1(fibonacci, n-1, &a);
         std::thread t2(fibonacci, n-2, &b);
